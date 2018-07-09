@@ -10,7 +10,8 @@ attr_accessor :files, :import, :path
   end
 
   def files
-    Dir.glob("#{@path}/*.mp3")
+    Dir.glob("#{@path}/*.mp3").map do |
+    end
 
   end
 
