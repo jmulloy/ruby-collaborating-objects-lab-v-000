@@ -10,7 +10,7 @@ attr_accessor :files, :import, :path
   end
 
   def files
-    Dir.glob("dir/glob/*") { |file|  }
+    Dir.glob("#{@path}*") { |file|  }
   end
 
   def import
