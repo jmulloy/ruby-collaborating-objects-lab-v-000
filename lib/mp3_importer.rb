@@ -15,12 +15,13 @@ attr_accessor :import, :path
   end
 
   def import
+    binding.pry
     self.files.each do |item|
      new_song = Song.new_by_filename(item)
      new_artist = Artist.new_by_filename(item)
      new_artist.add_song(new_song)
      new_song.artist = new_artist
-binding.pry
+
    end
   end
 end
