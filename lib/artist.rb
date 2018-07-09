@@ -9,7 +9,7 @@ attr_accessor :name, :songs
 
   def add_song(song_name)
     song_one = Song.new(song_name)
-    song_two
+    
 
   end
 
