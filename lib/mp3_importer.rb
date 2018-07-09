@@ -17,8 +17,9 @@ attr_accessor :import, :path
 
   def import
     self.files.each do |item|
-     Song.new_by_filename(item)
-     Artist.new_by_filename(item)
+     new_song = Song.new_by_filename(item)
+     new_artist = Artist.new_by_filename(item)
+     
    end
   end
 end
