@@ -19,6 +19,11 @@ def self.find_or_create_by_name(artist_name)
   end
 end
 
+def self.new_by_filename
+  
+end
+
+
   def initialize(name)
     @name = name
     @songs = []
@@ -38,7 +43,7 @@ end
      end
   end
 
-
+  def self.new_by_filename
 
 
 
