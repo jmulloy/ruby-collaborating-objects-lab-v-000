@@ -10,7 +10,7 @@ def self.new_by_filename(file_name)
     binding.pry
     song = Song.new(name)
     artist = Artist.find_or_create_by_name(artist_name)
-    song.artist = name
+    song.artist = artist
 end
 
 def initialize(name)
