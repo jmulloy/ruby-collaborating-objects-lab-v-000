@@ -32,8 +32,8 @@ end
     @@all << self
   end
 
-  def print_songs
-
+  def print_songs(song)
+    @songs << song
   end
 
 
