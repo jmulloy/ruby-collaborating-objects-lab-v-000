@@ -11,12 +11,8 @@ end
 
 def self.find_or_create_by_name(artist_name)
   @@all.find do |artist|
-    if artist.name == artist_name
-      artist
-    else
-      @@all << self.new(artist_name)
-    end
-  end
+     artist.name == artist_name
+   end
 end
 
 def self.new_by_filename
