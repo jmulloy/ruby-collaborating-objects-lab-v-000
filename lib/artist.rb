@@ -20,7 +20,7 @@ def self.find_or_create_by_name(artist_name)
    end
 end
 
-def self.new_by_filename
+def self.new_by_filename(file_name)
   new_array = file_name.split(" - ")
   artist_name = new_array[0]
   Artist.find_or_create_by_name(arist_name)
