@@ -33,7 +33,7 @@ end
   end
 
   def print_songs(song)
-    artist.print_songs = song
+    
   end
 
 
