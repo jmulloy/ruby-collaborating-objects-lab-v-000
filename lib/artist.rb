@@ -15,6 +15,7 @@ def self.find_or_create_by_name(artist_name)
       artist
     else
       @@all << self.new(artist_name)
+    end
       
 
 
