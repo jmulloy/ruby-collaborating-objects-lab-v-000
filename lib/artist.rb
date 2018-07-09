@@ -10,8 +10,13 @@ def self.all
 end
 
 def self.find_or_create_by_name(artist_name)
-  @@all.find do |artist|
+  artist_found = @@all.find do |artist|
      artist.name == artist_name
+   end
+   if !!artist_found
+     artist_found
+   else
+     Artist.new(artist_name)
    end
 end
 
