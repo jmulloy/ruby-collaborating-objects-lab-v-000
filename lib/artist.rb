@@ -7,7 +7,7 @@ attr_accessor :name, :songs
     @songs = []
   end
 
-  
+    
 
 
 end
