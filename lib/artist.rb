@@ -16,7 +16,9 @@ def self.find_or_create_by_name(artist_name)
    if !!artist_found
      artist_found
    else
-     Artist.new(artist_name)
+    artist = Artist.new(artist_name)
+    artist.save
+    artist
    end
 end
 
