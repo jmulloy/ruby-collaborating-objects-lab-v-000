@@ -32,7 +32,7 @@ end
     @@all << self
   end
 
-  def print_songs(song)
+  def print_songs
 
   end
 
