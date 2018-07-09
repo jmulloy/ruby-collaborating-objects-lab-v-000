@@ -1,6 +1,6 @@
 class Song
 
-attr_accessor :name, :songs
+attr_accessor :name, :songs, :artist
 
 def self.new_by_filename(file_name)
     new_array = file_name.split(" - ")
