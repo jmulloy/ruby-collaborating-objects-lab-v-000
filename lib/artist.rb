@@ -7,9 +7,7 @@ attr_accessor :name, :songs
     @songs = []
   end
 
-  def artisdt_songs
-    song_one = Song.new
-  end
+  
 
 
 end
