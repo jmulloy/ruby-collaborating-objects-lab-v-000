@@ -21,7 +21,6 @@ end
 
 def self.new_by_filename
   new_array = file_name.split(" - ")
-  name = new_array[1]
   artist_name = new_array[0]
   Artist.find_or_create_by_name(arist_name)
 end
