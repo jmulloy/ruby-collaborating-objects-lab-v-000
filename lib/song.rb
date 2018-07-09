@@ -11,4 +11,7 @@ def add_song(song)
   self.songs << song
 end
 
+def new_by_filename(name)
+  
+end
 end
