@@ -16,6 +16,6 @@ attr_accessor :import, :path
   end
 
   def import
-
+    Song.new_by_filename
   end
 end
