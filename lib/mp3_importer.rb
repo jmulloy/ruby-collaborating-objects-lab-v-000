@@ -12,7 +12,6 @@ attr_accessor :import, :path
       item.gsub("#{@path}/", "")
 
     end
-binding.pry
   end
 
   def import
@@ -21,7 +20,7 @@ binding.pry
      new_artist = Artist.new_by_filename(item)
      new_artist.add_song(new_song)
      new_song.artist = new_artist
-
+binding.pry
    end
   end
 end
