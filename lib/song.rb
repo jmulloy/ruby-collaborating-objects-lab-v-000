@@ -2,6 +2,10 @@ class Song
 
 attr_accessor :name, :songs
 
+def self.new_by_filename(file_name)
+
+end
+
 def initialize(name)
   @name = name
   @songs = []
@@ -11,7 +15,5 @@ def add_song(song)
   self.songs << song
 end
 
-def new_by_filename(name)
-  
-end
+
 end
