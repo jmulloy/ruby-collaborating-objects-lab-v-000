@@ -7,8 +7,11 @@ attr_accessor :name, :songs
     @songs = []
   end
 
+  def self.songs
 
-    
+  end
+
+
 
 
 end
