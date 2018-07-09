@@ -34,7 +34,7 @@ end
 
   def print_songs
      @songs.each do |song|
-       puts song_name
+       puts song.name
   end
 
 
