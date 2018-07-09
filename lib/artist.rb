@@ -8,7 +8,8 @@ attr_accessor :name, :songs
   end
 
   def self.add_song
-    song_one = Song.new
+    song_one = Song.new(song_name)
+    song_tw0
 
   end
 
