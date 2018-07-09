@@ -1,4 +1,4 @@
-
+require "pry"
 class MP3Importer
 
 attr_accessor :import, :path
@@ -8,11 +8,11 @@ attr_accessor :import, :path
   end
 
   def files
-    Dir.glob("#{@path}/*.mp3").map do |item|
+  local = Dir.glob("#{@path}/*.mp3").map do |item|
       item.gsub("#{@path}/", "")
 
     end
-
+binding.pry
   end
 
   def import
