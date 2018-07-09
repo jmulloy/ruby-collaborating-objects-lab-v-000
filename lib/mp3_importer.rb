@@ -10,8 +10,8 @@ attr_accessor :files, :import, :path
   end
 
   def files
-    Dir.glob("#{@path}*") { |file|  }
-    # Dir.glob("./spec/fixtures/mp3s")
+    Dir.glob("#{@path}/*.mp3")
+
   end
 
   def import
